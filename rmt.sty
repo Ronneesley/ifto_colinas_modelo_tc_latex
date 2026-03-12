@@ -3,7 +3,7 @@
 % Autor: Ronneesley Moura Teles
 % Desde: 22/06/2009 15:16
 % Modificado em: 23/07/2016 15:01 (melhorias)
-% Codificação: ISO-8859-1
+% CodificaÃ§Ã£o: ISO-8859-1
 %%
 \RequirePackage{url}
 \RequirePackage{listings}
@@ -32,15 +32,15 @@
 \RequirePackage{array}
 
 %%%%%%%%%%%%%%%%%
-% Parâmetros do pacote
+% ParÃ¢metros do pacote
 %%%%%%%%%%%%%%%%%
 
-%Habilita as legendas para apresentações como números
+%Habilita as legendas para apresentaÃ§Ãµes como nÃºmeros
 \DeclareOption{apresentacao}{
 	\setbeamertemplate{caption}[numbered]
 }
 
-%Coloca um documento em quatro páginas por papel A4
+%Coloca um documento em quatro pÃ¡ginas por papel A4
 \DeclareOption{impressao}{
 	\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]
 }
@@ -50,11 +50,11 @@
 
 \let\Tiny=\tiny
 
-%Configuração nota de rodapé de tabela
+%ConfiguraÃ§Ã£o nota de rodapÃ© de tabela
 %\makesavenoteenv{tabular}
 
 %%%%%%%%%%%%%%%%%
-% Parâmetros opcionais de configuração
+% ParÃ¢metros opcionais de configuraÃ§Ã£o
 %%%%%%%%%%%%%%%%%
 
 \def\larguraTabelaRequisitos#1{\def\@larguraTabelaRequisitos{#1}}		\larguraTabelaRequisitos{10cm}
@@ -62,7 +62,7 @@
 \def\modoResposta#1{\def\@modoResposta{#1}}								\modoResposta{nao}
 
 %%%%%%%%%%%%%%%%%
-% Definições de cores
+% DefiniÃ§Ãµes de cores
 %%%%%%%%%%%%%%%%%
 
 \definecolor{tcCinza}{rgb}{0.960000,0.960000,0.960000}
@@ -70,10 +70,10 @@
 \definecolor{tcBranco}{rgb}{1.000000,1.000000,1.000000}
 
 %%%%%%%%%%%%%%%%%
-% Codificações (Linguagens)
+% CodificaÃ§Ãµes (Linguagens)
 %%%%%%%%%%%%%%%%%
 
-%Codificação com Matlab
+%CodificaÃ§Ã£o com Matlab
 \definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
 \definecolor{mylilas}{RGB}{170,55,241}
 \lstset{language=Matlab,
@@ -96,7 +96,7 @@
     extendedchars=true
 }
 
-%Codificação da linguagem Nice
+%CodificaÃ§Ã£o da linguagem Nice
 \lstdefinelanguage{Nice}
 	{morekeywords={var,let,override,enum,assert,requires,ensures,alike},
 	sensitive=false,
@@ -105,7 +105,7 @@
 	morestring=[b]",
 }
 
-%Codificação da linguagem JavaFX
+%CodificaÃ§Ã£o da linguagem JavaFX
 \lstdefinelanguage{JavaFX}
 	{morekeywords={},
 	sensitive=false,
@@ -114,7 +114,7 @@
 	morestring=[b]",
 }
 
-%Codificação da linguagem JavaScript
+%CodificaÃ§Ã£o da linguagem JavaScript
 %Fonte das palavras-chave: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords
 \lstdefinelanguage{JavaScript}
 	{morekeywords={var, function, return, const, break, case, catch, class, continue, debugger, default, delete, do, else, export, extends, finally, for, if, import, in, instanceof, new, super, switch, this, throw, try, typeof, var, void, while, with, yield, abstract, boolean, byte, char, double, final, float, goto, int, long, native, short, synchronized, throws, transient, volatile},
@@ -124,7 +124,7 @@
 	morestring=[b]",
 }
 
-%Codificação da linguagem algoritmo
+%CodificaÃ§Ã£o da linguagem algoritmo
 \lstdefinelanguage{algoritmo}
 	{morekeywords={algoritmo, var, inicio, numerico, fimalgoritmo, escreva, leia, repita, ate, se, fimse, entao, escreval, real, inteiro, logico, literal, para, fimpara, faca, senao},
 	sensitive=false,
@@ -133,7 +133,7 @@
 	morestring=[b]",
 }
 
-%Codificação para Nula (sem marcações)
+%CodificaÃ§Ã£o para Nula (sem marcaÃ§Ãµes)
 \lstdefinelanguage{nula}
 	{morekeywords={},
 	sensitive=false,
@@ -143,10 +143,10 @@
 }
 
 %%%%%%%%%%%%%%%%%
-% Codificações (Estilos)
+% CodificaÃ§Ãµes (Estilos)
 %%%%%%%%%%%%%%%%%
 
-%Código-fonte
+%CÃ³digo-fonte
 \lstdefinestyle{CodigoFonte}{
 	numbers=left,
 	xleftmargin=5mm, 
@@ -189,11 +189,11 @@
 % Novos comandos
 %%%%%%%%%%%%%%%%%%
 
-%Funções de arrendondamento
+%FunÃ§Ãµes de arrendondamento
 \DeclarePairedDelimiter\ceil{\lceil}{\rceil}
 \DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
 
-%Abreviação do comando multicol
+%AbreviaÃ§Ã£o do comando multicol
 \newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
 
 %Comando abs
@@ -460,7 +460,7 @@
   \includegraphics[width=0.05\textwidth]{#1}
 }
 
-%Este comando permite identar dentro da descrição dos requisitos
+%Este comando permite identar dentro da descriÃ§Ã£o dos requisitos
 \newcommand*{\indentar}{\hspace*{1cm}}%
 
 \newcommand{\requisitoComTitulo}[9]{
@@ -469,11 +469,11 @@
   \requisito{#1}{#2}{#3}{#4}{#5}{#6}{#7}{#8}{#9}
 }
 
-%\requisito{RF10}{Descrição}
+%\requisito{RF10}{DescriÃ§Ã£o}
 %{Fonte do requisito}{Data}{Local}
-%{Responsável}{label}
+%{ResponsÃ¡vel}{label}
 %{Dicionario de dados}
-%{Especificação}
+%{EspecificaÃ§Ã£o}
 \newcommand{\requisito}[9]{
 	\begin{center}
 	
@@ -508,7 +508,7 @@
 				\multicolumn{1}{|>{\columncolor{tcCinza}}l|}{Data} & #4\\ \hline
 				\multicolumn{1}{|>{\columncolor{tcCinza}}l|}{Local e/ou Reuni\~ao} & #5\\ \hline
 				\multicolumn{1}{|>{\columncolor{tcCinza}}l|}{Respons\'avel pelo Requisito} & #6\\ \hline
-				\multicolumn{2}{|>{\columncolor{tcCinza}}c|}{Especifica\c{c}ão do Requisito} \\ \hline
+				\multicolumn{2}{|>{\columncolor{tcCinza}}c|}{Especifica\c{c}Ã£o do Requisito} \\ \hline
 				\multicolumn{2}{|p{\@larguraTabela}|}{#9} \\ \hline
 			\end{longtable}
 		}{
@@ -620,14 +620,14 @@
     \fi
 }
 
-%\casoUsoDetalhadoTextual{UC3}{Descrição}
+%\casoUsoDetalhadoTextual{UC3}{DescriÃ§Ã£o}
 %{Ator principal}
 %{Interessados e interesses}
-%{Pré-condições}
+%{PrÃ©-condiÃ§Ãµes}
 %{Garantia de sucesso}
 %{
 %	\begin{enumerate}[label=FB\arabic*.]
-%		\item Fluxo básico
+%		\item Fluxo bÃ¡sico
 %	\end{enumerate}
 %}{
 %	\begin{enumerate}[label=FA\arabic*.]
@@ -707,7 +707,7 @@
 	\cellcolor{tcCinza} Identificador & #1 & \cellcolor{tcCinza} Nome & #2 \\ \hline 
 }
 	
-%Especifica as configurações de uma linha comum do caso de uso
+%Especifica as configuraÃ§Ãµes de uma linha comum do caso de uso
 \newcommand{\linhaNormal}[2]{ 
 	\cellcolor{tcCinza} #1 & \multicolumn{3}{l|}{#2} \\ \hline 
 }
@@ -719,7 +719,7 @@
 \newcommand{\posCondicoes}[1]{	\linhaNormal{P\'os-condi\c{c}\~oes}{#1} }
 \newcommand{\frequenciaOcorrencia}[1]{	\linhaNormal{Frequ\^encia de ocorr\^encia}{#1} }
 
-%\duaslinhas{titulo da linha}{conteúdo}
+%\duaslinhas{titulo da linha}{conteÃºdo}
 \newcommand{\duaslinhas}[2]{
 	\multicolumn{4}{|c|}{ \cellcolor{tcCinza} #1} \\ \hline
 	\multicolumn{4}{|p{\linewidth}|}{
@@ -750,7 +750,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%Configuração algoritmos
+%ConfiguraÃ§Ã£o algoritmos
 \newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{gray}{#1}}
 \SetCommentSty{mycommfont}
 
@@ -759,17 +759,17 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Configurações para tabelas
+% ConfiguraÃ§Ãµes para tabelas
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%Permite organizar as colunas com tamanho fixo mesmo centralizado ou à direita, assim como
-%p{10cm} faz à esquerda
+%Permite organizar as colunas com tamanho fixo mesmo centralizado ou Ã  direita, assim como
+%p{10cm} faz Ã  esquerda
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-%Ambiente para programação linear
+%Ambiente para programaÃ§Ã£o linear
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newenvironment{po}{
@@ -795,14 +795,14 @@
 	\begingroup
 	\leftskip0.5cm
 	\rightskip0.5cm
-	\textbf{Dúvida: }
+	\textbf{DÃºvida: }
 	\color{red}
 }{
 	\par
 	\endgroup
 }
 
-%Ambiente para configuração de parágrafos
+%Ambiente para configuraÃ§Ã£o de parÃ¡grafos
 \newenvironment{paragrafo}[1]{
 	\begingroup
 	\leftskip#1

@@ -166,7 +166,7 @@
 				\center
 				\textbf{INSTITUTO FEDERAL DO TOCANTINS - CAMPUS COLINAS DO TOCANTINS}
 		
-				\textbf{TECNOLOGO EM \MakeUppercase{\@curso}}
+				\textbf{\MakeUppercase{\@curso}}
 		
 				\textbf{\MakeUppercase{\imprimirautor}}
 				\vfill
